@@ -1,7 +1,6 @@
 import string
 from find_word import find_word
 
-
 def main(guesses):
     # User chooses between either German with "1" or English with "2". Also making sure no other options are accepted
     possible_answers = [1,2]
