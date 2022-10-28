@@ -14,18 +14,18 @@ def main(guesses):
         except:
             print("Invalid.")
 
-    # The function to find a word is called according to the language chosen earlier
+    # find_word is called according to the user_language chosen earlier and will return one word(w)
     if user_language == 1:
         w = find_word(1).lower()
     elif user_language == 2:
         w = find_word(2).lower()
 
-    # The word is placed into an empty set
+    # Each character is placed into a dictionary with it's index as key and the character as the value
     word = {}
     for i, element in enumerate(w):
         word[i] = element
 
-    # According to the number of characters of the word, another set with "-" for each character is created
+    # According to the number of characters of the word, another dictionary with "-" for each character is created
     hidden_word = {}
     for i, element in enumerate(w):
         hidden_word[i] = "_"
