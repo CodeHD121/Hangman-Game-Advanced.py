@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 # Scraping a random word from a website designed for that in either German or English
 def find_word(lang):
     def soupify_and_find(site):
